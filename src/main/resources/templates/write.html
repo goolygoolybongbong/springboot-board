@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>글쓰기</title>
+    <script src="/static/js/bootstrap.js"></script>
+    <link href="/static/css/bootstrap.css" rel="stylesheet" />
+</head>
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark navbar-">
+        <div class="container">
+            <a class="navbar-brand" href="#">Home</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">소개</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">게시판</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">문의</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-md overflow-hidden">
+        <div>
+            <h1 class="text-center display-5 m-5">글 작성하기</h1>
+        </div>
+        <form>
+            <div class="mb-3">
+                <label for="title" class="form-label fw-bold">제목</label>
+                <input type="text" class="form-control" id="title" aria-describedby="title" placeholder="제목을 입력하세요">
+            </div>
+            <div class="mb-3">
+                <label for="content" class="form-label fw-bold">내용</label>
+                <textarea type="text" class="form-control" id="content" rows="13" placeholder="내용을 입력하세요"></textarea>
+            </div>
+            <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="private">
+                <label class="form-check-label" for="private">익명으로 작성하기</label>
+            </div>
+            <button type="submit" class="btn btn-primary" id="btn-save">제출</button>
+            <a href="/" class="btn btn-secondary">취소</a>
+        </form>
+    </div>
+</body>
+</html>
